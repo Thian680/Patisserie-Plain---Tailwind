@@ -22,7 +22,7 @@ function About() {
         <img
           src="/img/whiteCake.jpg"
           alt="white cake"
-          className="block w-[34%] mx-auto rounded-[8px]"
+          className="block w-[34%] mx-auto rounded-[8px] my-10"
         />
 
         <p className="text-justify mb-6 text-[large]">

@@ -13,21 +13,21 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-stone-100 py-12">
+      <section className="bg-indigo-800 py-12">
         <div className="w-[90%] max-w-[1200px] mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-6 text-slate-800">
+          <h2 className="text-2xl font-bold text-center mb-6 text-[#f4f4f4]">
             Customer Testimonials
           </h2>
 
-          <div className="mb-6 p-4 border-l-4 border-indigo-800 bg-white">
+          <div className="mb-6 p-4 border-l-4 border-[#0ac5e6] bg-white">
             <p className="italic ml-8 mt-9">
               "The best dining experience ever had!"
             </p>
             <span className="block mt-2 font-bold text-right text-slate-800">
-              - Gordon Ramsey
+              - Gordor Ramrey
             </span>
           </div>
-          <div className="mb-6 p-4 border-l-4 border-indigo-800 bg-white">
+          <div className="mb-6 p-4 border-l-4 border-[#0ac5e6] bg-white">
             <p className="italic ml-8 mt-9">
               "Amazing food and excellent service."
             </p>
@@ -35,27 +35,27 @@ function Home() {
               - Layla
             </span>
           </div>
-          <div className="mb-6 p-4 border-l-4 border-indigo-800 bg-white">
+          <div className="mb-6 p-4 border-l-4 border-[#0ac5e6] bg-white">
             <p className="italic ml-8 mt-9">"It's from that one anime."</p>
             <span className="block mt-2 font-bold text-right text-slate-800">
               - Judy Ann Sta. Maria-Lacson
             </span>
           </div>
-          <div className="mb-6 p-4 border-l-4 border-indigo-800 bg-white">
+          <div className="mb-6 p-4 border-l-4 border-[#0ac5e6] bg-white">
             <p className="italic ml-8 mt-9">
-              "The ambiance is so cozy and intimate."
+              "The ambiance is so nice and refreshing."
             </p>
             <span className="block mt-2 font-bold text-right text-slate-800">
-              - Judy Ann Sta. Maria-Lacson
+              - King Murro
             </span>
           </div>
-          <div className="mb-6 p-4 border-l-4 border-indigo-800 bg-white">
+          <div className="mb-6 p-4 border-l-4 border-[#0ac5e6] bg-white">
             <p className="italic ml-8 mt-9">"Fresh food wow."</p>
             <span className="block mt-2 font-bold text-right text-slate-800">
               - Ei
             </span>
           </div>
-          <div className="mb-6 p-4 border-l-4 border-indigo-800 bg-white">
+          <div className="mb-6 p-4 border-l-4 border-[#0ac5e6] bg-white">
             <p className="italic ml-8 mt-9">
               "I love the variety of dishes they offer!"
             </p>
