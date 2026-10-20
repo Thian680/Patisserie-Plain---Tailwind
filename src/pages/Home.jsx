@@ -1,11 +1,38 @@
 function Home() {
+
+  const testimonials = [
+    {
+      message: "The best dining experience ever had!",
+      name: "Gordor Ramrey",
+    },
+    {
+      message: "Amazing food and excellent service.",
+      name: "Layla",
+    },
+    {
+      message: "It's from that one anime.",
+      name: "Hitler",
+    },
+    {
+      message: "Horrible service, abominous food 0/10",
+      name: "DXGamerXD",
+    },
+    {
+      message: "Good food if you dont know how to cook",
+      name: "Ei",
+    },
+    {
+      message: "I love the variety of dishes they offer!",
+      name: "Ian Bryle",
+    },
+  ];
   return (
     <>
       <section className="bg-[url('/img/hero_5.png')] bg-white bg-cover bg-center bg-no-repeat py-[6em]">
         <div className="w-[90%] max-w-[1200px] mx-auto px-8 text-[#0f065e]">
-          <h1 className="font-bold text-center text-[3em] mb-[0.5em]">
+          <h2 className="font-bold text-center text-[3em] mb-[0.5em]">
             Welcome to Patisserie Plain
-          </h1>
+          </h2>
           <p className="text-3xl text-center text-[2em]">
             Experience the best cusine in the city. Enjoy our siganture dishes
             and refreshing ambience.
@@ -19,49 +46,13 @@ function Home() {
             Customer Testimonials
           </h2>
 
-          <div className="mb-6 p-4 border-l-4 border-[#0ac5e6] bg-white">
-            <p className="italic ml-8 mt-9">
-              "The best dining experience ever had!"
-            </p>
-            <span className="block mt-2 font-bold text-right text-slate-800">
-              - Gordor Ramrey
-            </span>
-          </div>
-          <div className="mb-6 p-4 border-l-4 border-[#0ac5e6] bg-white">
-            <p className="italic ml-8 mt-9">
-              "Amazing food and excellent service."
-            </p>
-            <span className="block mt-2 font-bold text-right text-slate-800">
-              - Layla
-            </span>
-          </div>
-          <div className="mb-6 p-4 border-l-4 border-[#0ac5e6] bg-white">
-            <p className="italic ml-8 mt-9">"It's from that one anime."</p>
-            <span className="block mt-2 font-bold text-right text-slate-800">
-              - Judy Ann Sta. Maria-Lacson
-            </span>
-          </div>
-          <div className="mb-6 p-4 border-l-4 border-[#0ac5e6] bg-white">
-            <p className="italic ml-8 mt-9">
-              "The ambiance is so nice and refreshing."
-            </p>
-            <span className="block mt-2 font-bold text-right text-slate-800">
-              - King Murro
-            </span>
-          </div>
-          <div className="mb-6 p-4 border-l-4 border-[#0ac5e6] bg-white">
-            <p className="italic ml-8 mt-9">"Fresh food wow."</p>
-            <span className="block mt-2 font-bold text-right text-slate-800">
-              - Ei
-            </span>
-          </div>
-          <div className="mb-6 p-4 border-l-4 border-[#0ac5e6] bg-white">
-            <p className="italic ml-8 mt-9">
-              "I love the variety of dishes they offer!"
-            </p>
-            <span className="block mt-2 font-bold text-right text-slate-800">
-              - Ian Bryle
-            </span>
+
+          <div className="class">{testimonials.map((testimonial) => (
+            <div key={testimonial.name}className="mb-6 p-4 border-l-4 border-[#0ac5e6] bg-white">
+              <p className="italic ml-8 mt-9">{testimonial.message}</p>
+              <span  className="block mt-2 font-bold text-right text-slate-800">- {testimonial.name}</span>
+            </div>
+          ))}
           </div>
         </div>
       </section>

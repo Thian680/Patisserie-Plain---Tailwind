@@ -55,6 +55,7 @@ function Contact() {
           <button
             type="submit"
             className="bg-indigo-800 text-white px-6 py-3 rounded transition-colors duration-300 hover:bg-slate-800 block m-auto"
+            onClick={() => alert("Message already used. You will be subjected to public hanging at 10-23-2026.")}
           >
             Send Message
           </button>
