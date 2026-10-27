@@ -13,7 +13,7 @@ function Navbar() {
       <nav className="bg-[#3212a5] py-[0.6em]">
         <div className="w-[90%] max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="mb-4 md:mb-0">
-            <Link to="/" className="text-white text-2xl font-bold mr-[1em]">
+            <Link to="/" className="text-white text-2xl font-bold">
               Patisserie Plain
             </Link>
           </div>  

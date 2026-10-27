@@ -1,4 +1,30 @@
+import { useState } from "react";
+
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((previousData) => ({
+      ...previousData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(formData);
+    alert("Form has been submitted. You will now be publicly hanged on 10/28/26 at 10PM")
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
 
   return (
     <section className="py-12">
@@ -7,19 +33,7 @@ function Contact() {
           Contact Us
         </h1>
 
-        <div className="mb-8 text-center">
-          <p>
-            <strong>Adress: </strong>Brgy Tiguma, Pagadian City, Philippines
-          </p>
-          <p>
-            <strong>Phone: </strong>(+63) 912-345-6789
-          </p>
-          <p>
-            <strong>Email: </strong>info@patisserieplain.com
-          </p>
-        </div>
-
-        <form onSubmit={(e) => e.preventDefault()} action="#" method="post" className="max-w-[500px] mx-auto">
+        <form onSubmit={handleSubmit} className="max-w-[500px] mx-auto">
           <label htmlFor="name" className="block mb-2 font-bold">
             Name:
           </label>
@@ -27,6 +41,9 @@ function Contact() {
             type="text"
             name="name"
             id="name"
+            value={formData.name}
+            required
+            onChange={handleChange}
             placeholder="Enter Your Name"
             className="w-full p-3 mb-4 border border-gray-300"
           />
@@ -38,24 +55,32 @@ function Contact() {
             type="email"
             name="email"
             id="email"
+            value={formData.email}
+            required
+            onChange={handleChange}
             placeholder="Enter Your Email"
             className="w-full p-3 mb-4 border border-gray-300"
           />
 
-          <label htmlFor="message" className="block mb-2 font-bold">
-            Message:
-          </label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Enter Your Message..."
-            className="w-full p-3 mb-4 border border-gray-300"
-          ></textarea>
+          <div className="mb-4">
+            <label htmlFor="message" className="block  font-bold mb-2">
+              Message:
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              value={formData.message}
+              required
+              onChange={handleChange}
+              placeholder="Enter Your Message."
+              className="w-full p-3 mb-4 border border-gray-300"
+            ></textarea>
+          </div>
 
           <button
             type="submit"
-            className="bg-indigo-800 text-white px-6 py-3 rounded transition-colors duration-300 hover:bg-slate-800 block m-auto"
-            onClick={() => alert("Message already used. You will be subjected to public hanging at 10-23-2026.")}
+            className="bg-indigo-800 text-white px-6 py-3 rounded hover:bg-[#70059b] block m-auto"
+
           >
             Send Message
           </button>
@@ -65,4 +90,4 @@ function Contact() {
   );
 }
 
-export default Contact
+export default Contact;

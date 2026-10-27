@@ -6,7 +6,7 @@ function NotFoundPage() {
       <h1 className="text-[2.5em] font-bold text-[#d9534f] mb-[20px]">
         404 - Page Not Found
       </h1>
-      <p className="text-[1.2em] text-[#666]">
+      <p className="text-[1.2em] text-[#666] my-10">
         The page you are looking for does not exist.
       </p>
       <img

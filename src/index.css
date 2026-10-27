@@ -7,6 +7,11 @@ html {
   scrollbar-gutter: stable;
 }
 
+::selection {
+  background-color: #20e4a9; 
+  color: #ffffff;          
+}
+
 body {
   margin: 0;
   font-family: "Nunito Sans", sans-serif;
