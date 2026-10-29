@@ -1,6 +1,9 @@
+import FoodShooter from "../components/FoodShooter";
+
 function About() {
   return (
     <section className="py-12">
+      <FoodShooter />
       <div className="w-[90%] max-w-[1200px] mx-auto">
         <h1 className="mb-[1em] font-bold text-center text-[2em] text-[#0f065e]">
           About Us
@@ -22,7 +25,7 @@ function About() {
         <img
           src="/img/whiteCake.jpg"
           alt="white cake"
-          className="block w-[80%] mx-auto rounded-[8px] my-10"
+          className="block w-[80%] mx-auto rounded-[8px] my-10 md:w-[45%]"
         />
 
         <p className="text-justify mb-6 text-[large]">
@@ -43,4 +46,4 @@ function About() {
   );
 }
 
-export default About
+export default About;
